@@ -1,11 +1,14 @@
-﻿using System;
+﻿using datos;
+using entidades;
+using System;
+using System.Diagnostics.Eventing.Reader;
 using System.Windows.Forms;
 
 namespace examen2
 {
-    public partial class login : Form
+    public partial class loginForm : Form
     {
-        public login()
+        public loginForm()
         {
             InitializeComponent();
         }
@@ -23,14 +26,14 @@ namespace examen2
 
         private void aceptarbutton_Click(object sender, EventArgs e)
         {
-            if (codigousuariotextBox.Text== string.Empty)
+            if (codigousuariotextBox.Text == string.Empty)
             {
                 errorProvider1.SetError(codigousuariotextBox, "Ingrese un usuario");
                 return;
 
             }
             errorProvider1.Clear();
-            if (contraseñatextBox.Text==string.Empty)
+            if (contraseñatextBox.Text == string.Empty)
             {
                 errorProvider1.SetError(contraseñatextBox, "Ingrese una contraseña");
                 return;
@@ -38,16 +41,23 @@ namespace examen2
             errorProvider1.Clear();
 
             //validar usuario en la base de datos
+            login login = new login(codigousuariotextBox.Text, contraseñatextBox.Text);
+            UsuarioDB usuarioDB = new UsuarioDB();
+            Usuario usuario = new Usuario();
 
+            usuario = usuarioDB.Autenticar(login);
 
-
-
-            //Mandar al menu
-            Menu menuformulario=new Menu();
-            this.Hide();
-            menuformulario.Show();
-
-
+            if(usuario != null) 
+            {
+                //Mandar al menu
+                Menu menuformulario = new Menu();
+                this.Hide();
+                menuformulario.Show();
+            }
+           else
+            {
+                MessageBox.Show("Datos de usuario incorrectos");
+            }
         }
     }
 }

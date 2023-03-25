@@ -16,14 +16,14 @@ namespace entidades
         {
         }
 
-        public Usuario(string codigoUsuario, string nombre, string correo, DateTime fechaCreacion, string rol, bool staActivo, string contraseña)
+        public Usuario(string codigoUsuario, string nombre, string correo, DateTime fechaCreacion, string rol, bool estaactivo, string contraseña)
         {
             CodigoUsuario = codigoUsuario;
             Nombre = nombre;
             Correo = correo;
             FechaCreacion = fechaCreacion;
             Rol = rol;
-            Estaactivo = Estaactivo;
+            Estaactivo = estaactivo;
             Contraseña = contraseña;
         }
     }

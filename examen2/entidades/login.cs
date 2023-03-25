@@ -3,18 +3,16 @@
     public  class login
     {
         public string CodigoUsuario { get; set; }
-        public string Ccontraseña { get; set; }
-        public string Rol { get; set; }
+        public string Contraseña { get; set; }
 
         public login()
         {
         }
 
-        public login(string codigoUsuario, string ccontraseña, string rol)
+        public login(string codigoUsuario, string contraseña)
         {
             CodigoUsuario = codigoUsuario;
-            Ccontraseña = ccontraseña;
-            Rol = rol;
+            Contraseña = contraseña;
         }
     }
 }
