@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="consultatickt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultatickt.Designer.cs">
+      <DependentUpon>consultatickt.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     <Compile Include="Usuariosform.Designer.cs">
       <DependentUpon>Usuariosform.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="consultatickt.resx">
+      <DependentUpon>consultatickt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +95,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ticketformulario.resx">
       <DependentUpon>ticketformulario.cs</DependentUpon>
@@ -115,6 +125,9 @@
       <Project>{47309DE3-567A-474A-B0B5-14CEFC739849}</Project>
       <Name>entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12575cb97a22f0f.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

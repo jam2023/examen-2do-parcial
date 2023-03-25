@@ -29,5 +29,19 @@ namespace examen2
             userform.Show();
 
         }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ticketformulario userform = new ticketformulario();
+            userform.MdiParent = this;
+            userform.Show();
+        }
+
+        private void ticketToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            consultatickt userform = new consultatickt();
+            userform.MdiParent = this;
+            userform.Show();
+        }
     }
 }

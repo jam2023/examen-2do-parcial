@@ -92,7 +92,7 @@ namespace examen2
                 }
                 if (string.IsNullOrEmpty(contraseñatextBox.Text))
                 {
-                    errorProvider1.SetError(contraseñatextBox, "ngrese una contraseña");
+                    errorProvider1.SetError(contraseñatextBox, "ingrese una contraseña");
                    contraseñatextBox.Focus();
                     return;
                 }
@@ -117,7 +117,10 @@ namespace examen2
 
 
             }
-            else if (tipooperacion == "modificar") ;
+            else if (tipooperacion == "modificar")
+            {
+
+            }
 
         }
     }

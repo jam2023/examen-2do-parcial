@@ -1,4 +1,4 @@
-﻿using datos;
+﻿
 using entidades;
 using System;
 using System.Diagnostics.Eventing.Reader;
@@ -39,25 +39,10 @@ namespace examen2
                 return;
             }
             errorProvider1.Clear();
+            Menu menuFormulario = new Menu();
+            this.Hide();
+            menuFormulario.Show();
 
-            //validar usuario en la base de datos
-            login login = new login(codigousuariotextBox.Text, contraseñatextBox.Text);
-            UsuarioDB usuarioDB = new UsuarioDB();
-            Usuario usuario = new Usuario();
-
-            usuario = usuarioDB.Autenticar(login);
-
-            if(usuario != null) 
-            {
-                //Mandar al menu
-                Menu menuformulario = new Menu();
-                this.Hide();
-                menuformulario.Show();
-            }
-           else
-            {
-                MessageBox.Show("Datos de usuario incorrectos");
-            }
         }
     }
 }
