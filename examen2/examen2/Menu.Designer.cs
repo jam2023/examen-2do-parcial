@@ -32,8 +32,8 @@
             this.menuformulario = new System.Windows.Forms.MenuStrip();
             this.ticketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuformulario.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +46,7 @@
             this.clienteToolStripMenuItem});
             this.menuformulario.Location = new System.Drawing.Point(0, 0);
             this.menuformulario.Name = "menuformulario";
-            this.menuformulario.Size = new System.Drawing.Size(800, 37);
+            this.menuformulario.Size = new System.Drawing.Size(812, 37);
             this.menuformulario.TabIndex = 0;
             this.menuformulario.Text = "menuStrip1";
             // 
@@ -66,12 +66,6 @@
             this.usuarioToolStripMenuItem.Text = "Cliente";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -80,11 +74,17 @@
             this.clienteToolStripMenuItem.Text = "Revisar ticket";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(812, 456);
             this.Controls.Add(this.menuformulario);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuformulario;

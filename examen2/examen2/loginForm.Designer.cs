@@ -46,7 +46,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(93, 83);
+            this.label1.Location = new System.Drawing.Point(37, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 20);
             this.label1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(65, 134);
+            this.label2.Location = new System.Drawing.Point(9, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 20);
             this.label2.TabIndex = 1;
@@ -63,14 +63,14 @@
             // 
             // codigousuariotextBox
             // 
-            this.codigousuariotextBox.Location = new System.Drawing.Point(193, 80);
+            this.codigousuariotextBox.Location = new System.Drawing.Point(137, 80);
             this.codigousuariotextBox.Name = "codigousuariotextBox";
             this.codigousuariotextBox.Size = new System.Drawing.Size(255, 27);
             this.codigousuariotextBox.TabIndex = 3;
             // 
             // contraseñatextBox
             // 
-            this.contraseñatextBox.Location = new System.Drawing.Point(193, 131);
+            this.contraseñatextBox.Location = new System.Drawing.Point(137, 131);
             this.contraseñatextBox.Name = "contraseñatextBox";
             this.contraseñatextBox.PasswordChar = '*';
             this.contraseñatextBox.Size = new System.Drawing.Size(255, 27);
@@ -78,7 +78,7 @@
             // 
             // aceptarbutton
             // 
-            this.aceptarbutton.Location = new System.Drawing.Point(171, 181);
+            this.aceptarbutton.Location = new System.Drawing.Point(115, 181);
             this.aceptarbutton.Name = "aceptarbutton";
             this.aceptarbutton.Size = new System.Drawing.Size(92, 51);
             this.aceptarbutton.TabIndex = 5;
@@ -89,7 +89,7 @@
             // cancelarbutton
             // 
             this.cancelarbutton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelarbutton.Location = new System.Drawing.Point(307, 183);
+            this.cancelarbutton.Location = new System.Drawing.Point(251, 183);
             this.cancelarbutton.Name = "cancelarbutton";
             this.cancelarbutton.Size = new System.Drawing.Size(92, 51);
             this.cancelarbutton.TabIndex = 6;
@@ -102,7 +102,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(119, 9);
+            this.label3.Location = new System.Drawing.Point(63, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(270, 40);
             this.label3.TabIndex = 7;
@@ -115,7 +115,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(475, 81);
+            this.pictureBox1.Location = new System.Drawing.Point(422, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(116, 102);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -128,7 +128,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelarbutton;
-            this.ClientSize = new System.Drawing.Size(619, 282);
+            this.ClientSize = new System.Drawing.Size(541, 239);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
