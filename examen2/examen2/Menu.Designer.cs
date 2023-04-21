@@ -62,8 +62,8 @@
             // 
             this.usuarioToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(115, 33);
-            this.usuarioToolStripMenuItem.Text = "Cliente";
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(126, 33);
+            this.usuarioToolStripMenuItem.Text = "Usuario";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
